@@ -7,6 +7,6 @@ from polls.models import Message
 from polls.serializers import MessageSerializer
 
 
-class MeasurementAddView(CreateAPIView):#RetrieveUpdateAPIView):5 /2
+class MeasurementAddView(CreateAPIView):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
